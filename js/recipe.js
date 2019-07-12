@@ -67,29 +67,34 @@ function redirDetail(name) {
   $('#pict').hide()
   $('#video').hide()
   $('#about').hide()
-  $('#pict').hide()
   console.log(name)
   let detailed = null
   for (let i = 0; i < detailrecipe.length; i++) {
-    $("#detail").empty()
+    // $("#detail").empty()
     if (detailrecipe[i].recipe.label == name) {
       detailed = detailrecipe[i]
     }
   }
+  // addVideo(name)
+  appendDetail(detailed)
   console.log(detailed)
 }
 
 function appendDetail(recipeData){
-  console.log(recipData)
-  console.log(video)
+  console.log(recipeData,'ini resep data')
+  console.log(video, 'ini videop')
+  let data = recipeData.recipe
+  $('#videoyoutube').empty()
+  $('#makanan').append(`
+      <h1 class="title is-2"> ${data.label}</h1>
+    `)
   for (let i = 0; i < video.length; i++) {
-    // video[i].
     
+    $('#videoyoutube').append(`
+      <h2 class="title is-5">${video[i].snippet.channelTitle}</h2>
+      <iframe src="https://www.youtube.com/embed/${video[i].id.videoId}" height="auto" width="100%"></iframe>
+    `)
   }
-  $('#detail').empty()
-  $('#detail').append(`
-
-  `)
   
 }
 
@@ -102,8 +107,8 @@ console.log(name)
       searched: name
   })
   .then((result)=> {
-      // console.log(result)
-      video = result
+    console.log(result,'jooajblvsjvbjlkascbnvai')
+      video = result.data
   })
   .catch((err)=>{
       console.log(err)
