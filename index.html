@@ -18,11 +18,33 @@
 
 <body>
     <section class="section is-fullhd">
+        <div class="form-group">
+            <h3>
+                <label for="foodSerch">Type Your Food Here:</label>
+            </h3>
+            <div class="form-row">
+                <div class="col-7">
+                    <input type="text" class="form-control" placeholder="Search" name="foodName" id="food">
+                </div>
+                <input type="button" class="btn btn-primary active" value="search" id="foodbutton">
+            </div>
+        </div>
+        <div class="container">
+            <p id="listrecipe"></p>
+        </div>
         
     </section>
+
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./recipe.js"></script>
     <script src="./js/main.js"></script>
 </body>
-
-</html>
