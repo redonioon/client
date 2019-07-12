@@ -1,0 +1,17 @@
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+#breadcrumb{
+    top: 60px;
+    margin-bottom: 20px;
+}
+
+.fixedleft{
+    margin-top: 20px;
+    border: 2px solid black;
+}
+.mainColumns{
+    margin-top: 50px
+}

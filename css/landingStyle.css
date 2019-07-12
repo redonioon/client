@@ -1,0 +1,16 @@
+.landing{
+    margin-top: 100px;
+}
+
+.bodyColoumn{
+    /* border: 2px solid blue; */
+    height: 580px;
+    max-height: 580px;
+    overflow: scroll;
+}
+.cardsignin{
+    height: 400px;
+}
+.cardsignup{
+    height: 400px;
+}
