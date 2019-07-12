@@ -16,6 +16,7 @@ function getRepo() {
         data
       }) {
         addVideo(name)
+        getImage(name)
         detailrecipe = data.hits
         $("#listrecipe").empty()
         for (let i = 0; i < data.hits.length; i++) {
