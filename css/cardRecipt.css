@@ -1,0 +1,19 @@
+.cardRecipt{
+    margin-bottom: 30px;
+    /* margin-top: 70 px; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.cardparent{
+    width: 270px;
+    height: 400px;;
+    margin: 10px 10px;
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; */
+}
+
+.cardtext{
+    max-height: 130px;
+    overflow: scroll
+}
